@@ -1,0 +1,70 @@
+.roadmap-page {
+    min-height: 100vh;
+    padding: 50px 70px;
+    background: #f7f9fc;
+    font-family: Arial, sans-serif;
+}
+
+.roadmap-page h1 {
+    font-size: 36px;
+    font-weight: 700;
+    margin-bottom: 10px;
+    color: #1e293b;
+}
+
+.roadmap-page h1 span {
+    color: #6366f1;
+}
+
+.roadmap-page > p {
+    color: #64748b;
+    font-size: 16px;
+    margin-bottom: 35px;
+}
+
+.roadmap-page h2 {
+    font-size: 24px;
+    color: #1e293b;
+    margin-bottom: 25px;
+}
+
+.roadmap-skills {
+    max-width: 900px;
+}
+
+.roadmap-card {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    background: white;
+    border-radius: 14px;
+    padding: 22px;
+    margin-bottom: 18px;
+    border: 1px solid #e5e7eb;
+    box-shadow: 0 5px 18px rgba(15, 23, 42, 0.05);
+}
+
+.roadmap-number {
+    width: 45px;
+    height: 45px;
+    border-radius: 50%;
+    background: #6366f1;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: 700;
+    flex-shrink: 0;
+}
+
+.roadmap-card h3 {
+    margin: 0 0 6px;
+    font-size: 19px;
+    color: #1e293b;
+}
+
+.roadmap-card p {
+    margin: 0;
+    color: #64748b;
+    font-size: 14px;
+}

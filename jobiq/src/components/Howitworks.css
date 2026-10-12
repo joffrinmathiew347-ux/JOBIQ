@@ -1,0 +1,368 @@
+
+
+* {
+    box-sizing: border-box;
+}
+
+.how-it-works-page {
+    min-height: 100vh;
+    width: 100%;
+
+    padding: 90px 70px 70px;
+
+    background:
+        radial-gradient(
+            circle at 50% 0%,
+            rgba(45, 91, 180, 0.12),
+            transparent 35%
+        ),
+        #061226;
+
+    color: #ffffff;
+
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+
+
+.how-heading {
+    max-width: 760px;
+    margin: 0 auto 65px;
+
+    text-align: center;
+}
+
+.how-heading > span {
+    display: inline-block;
+
+    padding: 7px 14px;
+
+    border: 1px solid #294a78;
+    border-radius: 20px;
+
+    background: #0b1c35;
+
+    color: #6f9cff;
+
+    font-size: 10px;
+    font-weight: 600;
+
+    letter-spacing: 1.2px;
+}
+
+.how-heading h1 {
+    margin: 20px 0 15px;
+
+    font-size: 42px;
+    line-height: 1.15;
+
+    letter-spacing: -1.2px;
+}
+
+.how-heading p {
+    max-width: 620px;
+
+    margin: 0 auto;
+
+    color: #8ea5c8;
+
+    font-size: 14px;
+    line-height: 1.7;
+}
+
+
+
+
+.how-steps {
+    width: 100%;
+    max-width: 1250px;
+
+    margin: 0 auto;
+
+    display: flex;
+    align-items: stretch;
+    justify-content: center;
+
+    gap: 12px;
+}
+
+
+.how-step {
+    position: relative;
+
+    flex: 1;
+
+    min-height: 255px;
+
+    padding: 25px 24px;
+
+    background: linear-gradient(
+        145deg,
+        #0c203d,
+        #08172d
+    );
+
+    border: 1px solid #1d385e;
+    border-radius: 14px;
+
+    transition: 0.25s ease;
+}
+
+.how-step:hover {
+    transform: translateY(-4px);
+
+    border-color: #315d99;
+
+    background: linear-gradient(
+        145deg,
+        #102747,
+        #0a1a31
+    );
+}
+
+
+
+.step-number {
+    display: block;
+
+    margin-bottom: 22px;
+
+    color: #557fca;
+
+    font-size: 12px;
+    font-weight: 700;
+
+    letter-spacing: 1px;
+}
+
+
+
+.step-icon {
+    width: 48px;
+    height: 48px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    margin-bottom: 20px;
+
+    border-radius: 11px;
+
+    background: #102d55;
+
+    border: 1px solid #234873;
+
+    color: #6095ff;
+
+    font-size: 21px;
+}
+
+.step-icon svg {
+    width: 20px;
+    height: 20px;
+}
+
+
+.how-step h2 {
+    margin: 0 0 10px;
+
+    font-size: 16px;
+    font-weight: 600;
+
+    color: #f2f6ff;
+}
+
+.how-step p {
+    max-width: 230px;
+
+    margin: 0;
+
+    color: #7f97ba;
+
+    font-size: 12px;
+    line-height: 1.7;
+}
+
+
+.step-arrow {
+    width: 42px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    color: #4e79bd;
+
+    font-size: 20px;
+}
+
+.step-arrow svg {
+    width: 18px;
+    height: 18px;
+}
+
+
+
+.how-cta {
+    max-width: 850px;
+
+    margin: 55px auto 0;
+
+    padding: 30px 35px;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    text-align: center;
+
+    background: #0a1b34;
+
+    border: 1px solid #1c385d;
+    border-radius: 14px;
+}
+
+.how-cta h2 {
+    margin: 0 0 8px;
+
+    font-size: 20px;
+    font-weight: 600;
+}
+
+.how-cta p {
+    margin: 0 0 22px;
+
+    color: #8299bb;
+
+    font-size: 12px;
+}
+
+.how-cta button {
+    height: 44px;
+
+    padding: 0 22px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    gap: 8px;
+
+    border: none;
+    border-radius: 8px;
+
+    background: linear-gradient(
+        100deg,
+        #287cf4,
+        #5c52e9
+    );
+
+    color: #ffffff;
+
+    font-size: 13px;
+    font-weight: 600;
+
+    cursor: pointer;
+
+    transition: 0.2s ease;
+}
+
+.how-cta button:hover {
+    transform: translateY(-1px);
+
+    opacity: 0.92;
+}
+
+.how-cta button svg {
+    font-size: 17px;
+}
+
+
+
+@media (max-width: 1050px) {
+
+    .how-it-works-page {
+        padding: 80px 35px 50px;
+    }
+
+    .how-steps {
+        flex-wrap: wrap;
+    }
+
+    .how-step {
+        flex: 0 0 calc(50% - 25px);
+    }
+
+    .step-arrow {
+        display: none;
+    }
+}
+
+
+@media (max-width: 650px) {
+
+    .how-it-works-page {
+        padding: 70px 18px 40px;
+    }
+
+    .how-heading {
+        margin-bottom: 40px;
+    }
+
+    .how-heading h1 {
+        font-size: 30px;
+    }
+
+    .how-heading p {
+        font-size: 13px;
+    }
+
+    .how-steps {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .how-step {
+        width: 100%;
+        min-height: auto;
+    }
+
+    .how-step p {
+        max-width: none;
+    }
+
+    .how-cta {
+        padding: 25px 20px;
+    }
+}
+.how-it-works-page .step-number {
+    position: absolute;
+
+    top: 22px;
+    right: 22px;
+
+    width: 34px;
+    height: 34px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    margin: 0;
+
+    background: #173967;
+
+    border: 1px solid #2c568c;
+
+    border-radius: 50%;
+
+    color: #ffffff;
+
+    font-size: 11px;
+    font-weight: 700;
+
+    letter-spacing: 0;
+
+    z-index: 5;
+}
